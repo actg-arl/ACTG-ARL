@@ -1,0 +1,13 @@
+accelerate==1.6.0
+datasets==3.5.0
+dp_accounting==0.5.0
+numpy==1.26.4
+pandas==2.2.3
+peft==0.15.1
+prv_accountant==0.2.0
+scipy==1.15.2
+torch==2.6.0
+tqdm==4.67.1
+transformers==4.50.0
+wandb
+sentencepiece==0.2.0

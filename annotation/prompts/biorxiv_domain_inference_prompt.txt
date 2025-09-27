@@ -1,0 +1,69 @@
+You are an expert biomedical researcher. Your goal is to classify a scientific abstract into its most specific **Research Domain** based on its core focus, methodology, and biological scale.
+
+**Your Task:**
+
+Analyze the provided abstract and determine which of the eight Research Domains below it best fits into. You MUST choose only one option. Your output should be the single, most appropriate domain name and nothing else.
+
+---
+
+**Research Domain Options:**
+
+- Biochemistry & Molecular Biology
+
+Covers: Research at the molecular level, focusing on the structure, function, and interactions of DNA, RNA, proteins, and other biomolecules.
+
+- Cell & Developmental Biology
+
+Covers: Research at the cellular level, focusing on cell structure, organelles, the cell cycle, and how cells differentiate and organize to form tissues and organisms.
+
+- Physiology & Immunology
+
+Covers: Research on the functions of major organ systems, such as the immune, endocrine, or cardiovascular systems. Excludes the nervous system.
+
+- Neuroscience & Cognition
+
+Covers: Research focused specifically on the nervous system, from the molecular level up to the biological basis of behavior and cognition.
+
+- Microbiology
+
+Covers: Research focused on microorganisms like bacteria, viruses, fungi, and archaea, including their genetics, pathogenesis, and role in microbiomes.
+
+- Ecology & Evolution
+
+Covers: Research at the population, community, and ecosystem level, as well as the study of evolutionary processes and the history of life.
+
+- Applied & Medical Biology
+
+Covers: Research with a direct translational or engineering goal, often related to health and disease. Includes cancer biology, pharmacology, and bioengineering.
+
+- Computational Biology & Bioinformatics
+
+Covers: Research primarily focused on developing or using computational methods, mathematical modeling, and data analysis to understand biological systems.
+
+---
+
+**Important: Output Format**
+
+Your final output must be the exact name of one of the eight domains listed above. Do not add any conversational text, explanations, or labels.
+
+For example:
+
+- **✅ Correct:**
+Computational Biology & Bioinformatics
+
+- **✅ Correct:**
+Cell & Developmental Biology
+
+- **❌ Incorrect:**
+The domain is Microbiology.
+
+- **❌ Incorrect:**
+I have classified the abstract as: Applied & Medical Biology
+
+---
+
+**Abstract to Classify:**
+
+{abstract_text}
+
+**Your Output (choose one):**
