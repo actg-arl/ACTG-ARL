@@ -694,24 +694,6 @@ class TokenizedSupervisedInstructDataset(Dataset):
             },
         )
       elif dataset_name in [
-          'biorxiv-complex8-conditions',
-          'biorxiv-complex8-condgen',
-      ]:
-        data_dir = '../data/biorxiv'
-        text_dataset = load_dataset(
-            'csv',
-            data_files={
-                'train': osp.join(
-                    data_dir,
-                    'biorxiv_json_schema_v2_train_gemini-2.5-flash_parsed.csv',
-                ),
-                'validation': osp.join(
-                    data_dir,
-                    'biorxiv_json_schema_v2_valid_gemini-2.5-flash_parsed.csv',
-                ),
-            },
-        )
-      elif dataset_name in [
           'biorxiv-complex8et-conditions',
           'biorxiv-complex8et-condgen',
       ]:

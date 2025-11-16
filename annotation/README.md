@@ -1,6 +1,6 @@
-# Schema Extraction for bioRxiv Dataset
+# Schema Design & Extraction for bioRxiv Dataset
 
-This code implements calling Gemini APIs for:
+This folder implements calling Gemini APIs for:
 
 (1) designing a schema;
 
@@ -18,7 +18,7 @@ Note that a ``GOOGLE_API_KEY`` needs to be obtained from [Google AI Studio](http
 
 ## Example Script
 
-(1) Calls Gemini APIs for designing a schema, based on provided `data_description`, `workload_description`, and `num_features`. We encourage readers to play with these configurations to refine their feature design tailored to their own datasets.
+(1) Calls Gemini APIs for designing a schema, based on provided `data_description`, `workload_description`, and `num_features`. We encourage readers to play with these configurations to refine their schema design tailored to their own datasets.
 
 ```bash
 python design_schema.py
