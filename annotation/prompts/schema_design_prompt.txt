@@ -1,0 +1,30 @@
+I would like to extract structured features from unstructured data. Your task is to analyze the dataset description and provided examples to define a set of representative categorical features.
+
+# Dataset Description:
+{data_description}
+
+# Primary Goal
+The extracted features should be optimized to be as useful as possible for the following workload:
+{workload_description}
+
+# Core Task
+Generate a set of {num_features} categorical features that provide a rich summary of the underlying text.
+
+# Feature Requirements:
+1.  **Feature Diversity**: The feature set should be comprehensive. Strive to include a mix of:
+    - **General-Purpose Features**: Attributes applicable to almost any text (e.g., Formality, Sentiment).
+    - **Domain-Specific Features**: Attributes that capture the unique jargon, entities, or processes of the target dataset, keeping the data shift in mind.
+2.  **Orthogonality**: Prioritize features that are orthogonal / independent, unless they are intentionally hierarchical.
+3.  **Values**: Each feature must have a fixed set of at most 50 explicitly enumerated possible values. These values must be representative of the target data. Use an "Other" category where appropriate.
+4.  **Hierarchical Features**: Conditional features are permitted. If a feature's relevance depends on the value of another, its value should be "Not Applicable" when the condition is not met (e.g., a `LegalSubTopic` feature is only applicable if `MainTopic` is `Legal`).
+5.  **Avoid Triviality**: Do not create features that are overly simplistic or too specific to a single exemplar.
+
+
+# Output Format:
+Provide your response as a numbered list. For each feature, you MUST include its name, possible values, a description, and a rationale for its inclusion.
+
+1.  **Feature Name**:
+    - **Possible Values**: ...
+    - **Description**: A brief, clear explanation of what the feature captures.
+    - **Rationale**: A justification for why this feature is useful for the primary goal, citing an example if helpful.
+2.  ...
